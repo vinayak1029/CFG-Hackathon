@@ -1,0 +1,115 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #D3D3D3;
+    border-radius: 8px;
+}
+
+body {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #F8F8F8;
+    padding: 20px;
+}
+
+.login-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+#login-form {
+    flex: 1 0 100%;
+    max-width: 480px;
+    width: 100%;
+    padding: 60px;
+}
+
+#login-form p {
+    margin-bottom: 30px;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+.illustration-wrapper {
+    display: flex;
+    align-items: flex-end;
+    max-width: 600px;
+    min-height: 100%;
+    background-color: #fffdf2;
+}
+
+.illustration-wrapper img {
+    display: block;
+    width: 100%;
+}
+
+/* inputs */
+.login-form label,
+.login-form input {
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+.login-form button {
+    display: block;
+    width: 100px;
+    font-size: 1em;
+    color: #fff;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #fd7e14;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px auto;
+}
+
+.add-modules {
+    display: flex;
+    align-items: center;
+}
+
+.add-modules button {
+    margin: 0 0 0 10px;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    .login-box {
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    #login-form {
+        max-width: 100%;
+    }
+}
